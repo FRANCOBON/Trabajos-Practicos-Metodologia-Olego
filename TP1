@@ -1,0 +1,20 @@
+def determinarsielnumeroesprimo(numero, esprimo, contador):
+    for i in range(2,numero-1):
+        if numero % i == 0:
+            print("El número", numero, "No es número primo")
+            esprimo = False
+            break
+    if esprimo == True:
+        contador.append(numero)
+        print("El número", numero, "es número primo y por tanto es el", len(contador),"° numero primo")
+
+print("Ingrese el enesimo número")
+enesimonumero = int(input())
+esprimo = True
+numero = 1
+contador = []
+while len(contador) < enesimonumero:
+    numero = numero + 1
+    determinarsielnumeroesprimo(numero, esprimo, contador)
+print("Conclusión:")
+print("El", enesimonumero, "° número primo solicitado es", contador[-1])
