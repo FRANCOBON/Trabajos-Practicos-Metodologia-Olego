@@ -29,9 +29,9 @@ xconstante = sm.add_constant(xvar)
 modelo = sm.OLS(yvar, xconstante).fit()
 print(modelo.summary())
 
-## Regresión de cuantos años tiene y el apoyo al matrimonio homosexual
-xvar = df_diputados["SOCD5"]
-yvar = df_diputados["VAL101"]
+## Regresión de los gobiernos deben dar prioridad a las políticas económicas sobre la democracia y la valoración de las FF.AA
+xvar = df_diputados["ACT101"]
+yvar = df_diputados["FFAA101"]
 print(xvar)
 print(yvar)
 xconstante = sm.add_constant(xvar)
