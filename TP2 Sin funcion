@@ -9,7 +9,7 @@ df_diputados, meta = pyreadstat.read_sav(file_path)
 df_diputados = df_diputados.loc[~((df_diputados['ID101'] == 98) | (df_diputados['ID101'] == 99) |
                                    (df_diputados['PRO102'] == 98) | (df_diputados['PRO112'] == 99))]
 
-pd.set_option('display.max_columns', None)
+
 print(df_diputados)
 ### Correlación de que tipo de rol (oficialista u opositor) y como ve la estabilidad de la democracia
 xvar = df_diputados["POL1"]
