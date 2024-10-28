@@ -1,0 +1,27 @@
+def Regresion(x,y):
+    print(x)
+    print(y)
+    xconstante = sm.add_constant(x)
+    modelo = sm.OLS(y, xconstante).fit()
+    print(modelo.summary())
+
+import pandas as pd
+import statsmodels.api as sm
+import pyreadstat
+
+file_path = 'D:/Backup/Documents/Documentos de la facultad/Metodologia III/BASEDATOS_ARGENTINA_122_ .sav'
+
+
+df_diputados, meta = pyreadstat.read_sav(file_path)
+
+df_diputados = df_diputados.loc[~((df_diputados['ID101'] == 98) | (df_diputados['ID101'] == 99) |
+                                   (df_diputados['PRO102'] == 98) | (df_diputados['PRO112'] == 99))]
+pd.options.display.max_columns = None
+pd.options.display.max_rows = None
+print(df_diputados)
+## Regresión de que tipo de rol (oficialista u opositor) y como ve la estabilidad de la democracia
+Regresion(df_diputados["POL1"], df_diputados["DEM1"])
+## Regresión de que espectro ideológico y confianza en el presidente del país
+Regresion(df_diputados["ID101"], df_diputados["BID202"])
+## Regresión de cuantos años tiene y el apoyo al matrimonio homosexual
+Regresion(df_diputados["SOCD5"], df_diputados["VAL101"])
