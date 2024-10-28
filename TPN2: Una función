@@ -16,8 +16,7 @@ df_diputados, meta = pyreadstat.read_sav(file_path)
 
 df_diputados = df_diputados.loc[~((df_diputados['ID101'] == 98) | (df_diputados['ID101'] == 99) |
                                    (df_diputados['PRO102'] == 98) | (df_diputados['PRO112'] == 99))]
-pd.options.display.max_columns = None
-pd.options.display.max_rows = None
+
 print(df_diputados)
 ## Regresión de que tipo de rol (oficialista u opositor) y como ve la estabilidad de la democracia
 Regresion(df_diputados["POL1"], df_diputados["DEM1"])
