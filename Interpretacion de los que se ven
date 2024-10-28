@@ -1,0 +1,88 @@
+Regresion 1:
+Independiente: encuestado
+Dependiente: comisión 01
+OLS Regression Results                            
+==============================================================================
+Dep. Variable:             comision01   R-squared:                       0.036
+Model:                            OLS   Adj. R-squared:                  0.027
+Method:                 Least Squares   F-statistic:                     4.044
+Date:                Mon, 28 Oct 2024   Prob (F-statistic):             0.0468
+Time:                        12:11:56   Log-Likelihood:                -359.65
+No. Observations:                 110   AIC:                             723.3
+Df Residuals:                     108   BIC:                             728.7
+Df Model:                           1                                         
+Covariance Type:            nonrobust                                         
+==============================================================================
+                 coef    std err          t      P>|t|      [0.025      0.975]
+------------------------------------------------------------------------------
+const          8.6171      1.210      7.121      0.000       6.218      11.016
+Encuestado    -0.0161      0.008     -2.011      0.047      -0.032      -0.000
+==============================================================================
+Omnibus:                       58.751   Durbin-Watson:                   1.803
+Prob(Omnibus):                  0.000   Jarque-Bera (JB):              177.671
+Skew:                           2.010   Prob(JB):                     2.63e-39
+Kurtosis:                       7.754   Cond. No.                         300.
+A través del método OLS (regresión de los mínimos cuadrados) se obtiene los siguientes resultados:
+a)	La variable independiente no impacta en la proporción de la varianza de   la variable dependiente. El R2 cuadrado es (0,036) 
+b)	Cuando la variable independiente es 0 la variable dependiente vale 8.6171
+c)	En promedio cada vez que la variable independiente aumenta la pendiente es de -0.0161
+Regresión 2:
+Independiente: encuestado
+Dependiente: comisión 01
+OLS Regression Results                            
+==============================================================================
+Dep. Variable:             comision02   R-squared:                       0.023
+Model:                            OLS   Adj. R-squared:                  0.014
+Method:                 Least Squares   F-statistic:                     2.507
+Date:                Mon, 28 Oct 2024   Prob (F-statistic):              0.116
+Time:                        12:11:56   Log-Likelihood:                -399.14
+No. Observations:                 110   AIC:                             802.3
+Df Residuals:                     108   BIC:                             807.7
+Df Model:                           1                                         
+Covariance Type:            nonrobust                                         
+==============================================================================
+                 coef    std err          t      P>|t|      [0.025      0.975]
+------------------------------------------------------------------------------
+const         10.7771      1.799      5.992      0.000       7.212      14.342
+partido        0.1610      0.102      1.583      0.116      -0.041       0.363
+==============================================================================
+Omnibus:                       19.211   Durbin-Watson:                   2.003
+Prob(Omnibus):                  0.000   Jarque-Bera (JB):               23.417
+Skew:                           0.977   Prob(JB):                     8.22e-06
+Kurtosis:                       4.136   Cond. No.                         36.4
+
+A través del método OLS (regresión de los mínimos cuadrados) se obtiene los siguientes resultados:
+a)	La variable independiente no impacta en la proporción de la varianza de   la variable dependiente. El R2 cuadrado es (0,023) 
+b)	Cuando la variable independiente es 0 la variable dependiente vale 10.7771
+c)	En promedio cada vez que la variable independiente aumenta la pendiente es de 0.1610
+Regresión 3:
+Independiente: partido
+Dependiente: comisión 03
+OLS Regression Results                            
+==============================================================================
+Dep. Variable:                   peso   R-squared:                       0.000
+Model:                            OLS   Adj. R-squared:                 -0.009
+Method:                 Least Squares   F-statistic:                   0.03159
+Date:                Mon, 28 Oct 2024   Prob (F-statistic):              0.859
+Time:                        12:18:02   Log-Likelihood:                 97.836
+No. Observations:                 110   AIC:                            -191.7
+Df Residuals:                     108   BIC:                            -186.3
+Df Model:                           1                                         
+Covariance Type:            nonrobust                                         
+==============================================================================
+                 coef    std err          t      P>|t|      [0.025      0.975]
+------------------------------------------------------------------------------
+const          1.0024      0.014     71.282      0.000       0.975       1.030
+departa       -0.0002      0.001     -0.178      0.859      -0.003       0.003
+==============================================================================
+Omnibus:                        6.606   Durbin-Watson:                   1.900
+Prob(Omnibus):                  0.037   Jarque-Bera (JB):                7.417
+Skew:                           0.361   Prob(JB):                       0.0245
+Kurtosis:                       4.047   Cond. No.                         14.8
+
+A través del método OLS (regresión de los mínimos cuadrados) se obtiene los siguientes resultados:
+a)	La variable independiente no impacta en la proporción de la varianza de   la variable dependiente. El R2 cuadrado es (0,000) 
+b)	Cuando la variable independiente es 0 la variable dependiente vale 1.0024
+c)	En promedio cada vez que la variable independiente aumenta la pendiente es de -0.0002
+
+
