@@ -1,0 +1,88 @@
+Regresión 1: 
+Independiente: qué tipo de rol tiene (oficialista u opositor)
+Dependiente: como observa la estabilidad de la democracia
+Los datos estadísticos obtenidos son: 
+             OLS Regression Results                            
+==============================================================================
+Dep. Variable:                   DEM1   R-squared:                       0.000
+Model:                            OLS   Adj. R-squared:                 -0.009
+Method:                 Least Squares   F-statistic:                   0.01433
+Date:                Sun, 27 Oct 2024   Prob (F-statistic):              0.905
+Time:                        18:37:05   Log-Likelihood:                -90.024
+No. Observations:                 110   AIC:                             184.0
+Df Residuals:                     108   BIC:                             189.4
+Df Model:                           1                                         
+Covariance Type:            nonrobust                                         ==============================================================================
+
+                 coef           std err          t             P>|t|      [0.025      0.975]
+const          3.7118      0.112     33.100      0.000       3.490       3.934
+POL1          -0.0073      0.061     -0.120      0.905      -0.129       0.114
+Omnibus:                       58.159   Durbin-Watson:                   1.875
+Prob(Omnibus):                  0.000   Jarque-Bera (JB):              173.655
+Skew:                          -1.994   Prob(JB):                     1.96e-38
+Kurtosis:                       7.689   Cond. No.                         4.85
+
+A través del método OLS (regresión de los mínimos cuadrados) se obtiene los siguientes resultados:
+a)	La variable independiente no impacta en la proporción de la varianza de   la variable dependiente. El R2 cuadrado es (0,0) 
+b)	Cuando la variable independiente es 0 la variable dependiente vale 3.78
+c)	En promedio cada vez que la variable independiente aumenta la pendiente es de -0.0073.
+
+Regresión 2:
+Independiente: en que espectro ideológico, del 1 al 10 izquierda-derecha, se encuentra 
+Dependiente: confianza en el presidente del país
+                OLS Regression Results                            
+==============================================================================
+Dep. Variable:                 BID202   R-squared:                       0.033
+Model:                            OLS   Adj. R-squared:                  0.024
+Method:                 Least Squares   F-statistic:                     3.730
+Date:                Sun, 27 Oct 2024   Prob (F-statistic):             0.0561
+Time:                        18:37:05   Log-Likelihood:                -484.98
+No. Observations:                 110   AIC:                             974.0
+Df Residuals:                     108   BIC:                             979.4
+Df Model:                           1                                         
+Covariance Type:            nonrobust                                         
+==============================================================================
+                 coef    std err          t      P>|t|      [0.025      0.975]
+------------------------------------------------------------------------------
+const         15.9936      5.301      3.017      0.003       5.485      26.502
+ID101         -1.9968      1.034     -1.931      0.056      -4.046       0.053
+==============================================================================
+Omnibus:                      123.864   Durbin-Watson:                   2.117
+Prob(Omnibus):                  0.000   Jarque-Bera (JB):             1493.691
+Skew:                           4.167   Prob(JB):                         0.00
+Kurtosis:                      19.014   Cond. No.                         14.7
+
+A través del método OLS (regresión de los mínimos cuadrados) se obtiene los siguientes resultados:
+a)	La variable independiente no impacta en la proporción de la varianza de   la variable dependiente. El R2 cuadrado es (0,033) 
+b)	Cuando la variable independiente es 0 la variable dependiente vale 15.9936
+c)	En promedio cada vez que la variable independiente aumenta la pendiente es de -1.9968
+Regresión 3:
+Independiente: los gobiernos deben dar prioridad a las políticas económicas sobre la democracia
+Dependiente: valoración de las FF.AA
+                            OLS Regression Results                            
+==============================================================================
+Dep. Variable:                FFAA101   R-squared:                       0.011
+Model:                            OLS   Adj. R-squared:                  0.002
+Method:                 Least Squares   F-statistic:                     1.245
+Date:                Mon, 28 Oct 2024   Prob (F-statistic):              0.267
+Time:                        10:51:03   Log-Likelihood:                -225.47
+No. Observations:                 110   AIC:                             454.9
+Df Residuals:                     108   BIC:                             460.3
+Df Model:                           1                                         
+Covariance Type:            nonrobust                                         
+==============================================================================
+                 coef    std err          t      P>|t|      [0.025      0.975]
+------------------------------------------------------------------------------
+const          5.9341      0.199     29.794      0.000       5.539       6.329
+ACT101         0.0215      0.019      1.116      0.267      -0.017       0.060
+==============================================================================
+Omnibus:                        0.586   Durbin-Watson:                   2.128
+Prob(Omnibus):                  0.746   Jarque-Bera (JB):                0.332
+Skew:                          -0.127   Prob(JB):                        0.847
+Kurtosis:                       3.089   Cond. No.                         11.4
+==============================================================================
+A través del método OLS (regresión de los mínimos cuadrados) se obtiene los siguientes resultados:
+a)	La variable independiente no impacta en la proporción de la varianza de   la variable dependiente. El R2 cuadrado es (0,011) 
+b)	Cuando la variable independiente es 0 la variable dependiente vale 5.93411
+c)	En promedio cada vez que la variable independiente aumenta la pendiente es de 0.0215
+
