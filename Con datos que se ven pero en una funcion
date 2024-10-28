@@ -1,0 +1,26 @@
+def Regresion(x,y):
+    print(x)
+    print(y)
+    xconstante = sm.add_constant(x)
+    modelo = sm.OLS(y, xconstante).fit()
+    print(modelo.summary())
+
+import pandas as pd
+import statsmodels.api as sm
+import pyreadstat
+
+file_path = 'D:/Backup/Documents/Documentos de la facultad/Metodologia III/BASEDATOS_ARGENTINA_122_ .sav'
+
+
+df_diputados, meta = pyreadstat.read_sav(file_path)
+
+df_diputados = df_diputados.loc[~((df_diputados['ID101'] == 98) | (df_diputados['ID101'] == 99) |
+                                   (df_diputados['PRO102'] == 98) | (df_diputados['PRO112'] == 99))]
+
+print(df_diputados)
+##Regresión de encuestado con comisión01
+Regresion(df_diputados["Encuestado"], df_diputados["comision01"])
+## Regresión de partido con comision02
+Regresion(df_diputados["partido"], df_diputados["comision02"])
+## Regresión de departamento con peso
+Regresion(df_diputados["departa"], df_diputados["peso"])
