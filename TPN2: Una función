@@ -23,5 +23,5 @@ print(df_diputados)
 Regresion(df_diputados["POL1"], df_diputados["DEM1"])
 ## Regresión de que espectro ideológico y confianza en el presidente del país
 Regresion(df_diputados["ID101"], df_diputados["BID202"])
-## Regresión de cuantos años tiene y el apoyo al matrimonio homosexual
-Regresion(df_diputados["SOCD5"], df_diputados["VAL101"])
+## Regresión de los gobiernos deben dar prioridad a las políticas económicas sobre la democracia y la valoración de las FF.AA
+Regresion(df_diputados["ACT101"], df_diputados["FFAA101"])
